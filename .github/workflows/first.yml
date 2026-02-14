@@ -1,0 +1,16 @@
+name: GitHub
+
+on: 
+  push:
+    branches: 
+      - main
+
+  workflow_dispatch:
+
+jobs: 
+  first-job: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Print Message 
+        run: echo 'Hello!'
+
