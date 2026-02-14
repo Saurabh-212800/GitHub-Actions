@@ -1,0 +1,18 @@
+name: global variables 
+
+on: 
+  push: 
+    branches: 
+      - main
+
+  workflow_dispatch:
+
+env: 
+  Cloud: "Saurabh"
+
+jobs: 
+  second-job:
+    runs-on: ubuntu-latest 
+    steps:
+     - name: I'm here
+       run: echo "My Name is $Cloud" 
